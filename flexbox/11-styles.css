@@ -60,7 +60,7 @@
     --section-footer-align: center;
   
     /** HEADER **/
-
+    --header-padding: 4rem 0 0;
   
     /** FOOTER **/
     --footer-padding: 5rem 0 1rem;
@@ -185,8 +185,6 @@
     list-style: none;
   }
   
-
-  
   [class*='col-'] {
     margin: 1rem;
   }
@@ -216,11 +214,11 @@
     font-size: var(--nav-item-font-size);
     letter-spacing: var(--nav-item-letter-spacing);
   }
-
+  
   .nav .nav-item + .nav-item {
     margin: var(--nav-item-margin);
   }
-  
+
   .nav .nav-link {
     display: block;
     padding: 0.5rem 0;
@@ -251,17 +249,17 @@
   /* Header
       ============================= */
   
-  .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
   .header {
     padding: var(--header-padding);
          position: relative;
          z-index: 3;
-         background: transparent;
+         background: transparent !important;
+  }
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   
   /* Footer
@@ -356,18 +354,18 @@
     padding: 10rem 4rem;
   }
 
-  .section-hero .section-category{
+  .section-hero .section-category {
     color: var(--color-white);
     text-transform: uppercase;
   }
-
+  
   .hero-homepage {
     background-position: 75% 0;
     background-repeat: no-repeat;
     background-size: 90rem auto;
     background-color: #010101;
   }
-  
+
   .section-hero .section-title {
     margin-bottom: 5rem;
   }
@@ -380,23 +378,23 @@
     min-height: 50vh;
   }
   
-  /* Section Latest news 
-      ============================= */
-
+  /* Section Latest news
+    ============================= */
+  
   .section-latest-news .row {
     flex-direction: row-reverse;
   }
 
-  /* Section SERVICES 
-      ============================= */
+  /* Section SERVICES
+    ============================= */
   
   .section-services .row {
     flex-wrap: wrap;
   }
 
   /* Section ABOUT US
-      ============================ */
-
+    ============================= */
+  
   .section-about-us [class*='col-'] {
     align-self: center;
   }
@@ -539,7 +537,7 @@
   }
 
   .hero-article::before {
-    content: '';
+    content: "";
     background: rgba(0, 0, 0, 0.8);
     position: absolute;
     top: 0;
